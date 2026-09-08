@@ -1,0 +1,17 @@
+CREATE TABLE dbo.Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID NVARCHAR(50),
+    OrderDate DATETIME,
+    UpdatedDate DATETIME,
+    Amount FLOAT
+);
+
+CREATE TABLE dbo.temp_Orders (
+    OrderID INT,
+    CustomerID NVARCHAR(50),
+    OrderDate DATETIME,
+    UpdatedDate DATETIME,
+    Amount FLOAT
+);
+
+select * from dbo.temp_Orders;
